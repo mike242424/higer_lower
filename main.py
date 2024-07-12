@@ -16,7 +16,7 @@ while(is_playing == True):
     state_two = data[random.randint(0, len(data) - 1)]
 
   print(f"Compare A. {state_one['state']} vs B. {state_two['state']}.")
-  guess = input("Which state has a higher population? Choose 'A' or 'B'.\n").upper()
+  guess = input("Which state has a higher population? Choose 'A' or 'B': ").upper()
 
   if(state_one['population'] > state_two['population'] and guess == 'A'):
     os.system('clear')
